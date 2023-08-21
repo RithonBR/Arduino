@@ -17,16 +17,17 @@ Atenção, salvar o arquivo como "Exercicio-01C".
 Use a estrutura base abaixo para iniciar a programação.
 */
 int incremento = 0;
-
+int pinoLedVer1 = 38;
+int tempoEspera = 1000;
 
 /*-----------------------Exercicio-01B----------------
 int pinoLedVer1 = 38;
 int tempoEspera = 1000;
 */
 void setup() {
-  // put your setup code here, to run once:
-  //Define a porta do led como saida
- 
+
+  pinMode(pinoLedVer1, OUTPUT);
+  Serial.begin(9600);//inicializa o monitor serial
 
 /*-----------------------Exercicio-01B----------------
   pinMode(pinoLedVer1,OUTPUT);
@@ -40,6 +41,12 @@ void setup() {
 }
 
 void loop() {
+  digitalWrite(pinoLedVer1, HIGH);
+  delay(tempoEspera);
+  digitalWrite(pinoLedVer1, LOW);
+  delay(tempoEspera);
+  incremento += 1;
+  Serial.println(incremento);
 
 /*-----------------------Exercicio-01B----------------
   digitalWrite(pinoLedVer1, HIGH);
