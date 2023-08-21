@@ -37,8 +37,8 @@ void loop() {
   delay(tempoEspera);
   digitalWrite(ledAmarelo,LOW);
   delay(tempoEspera);
-  tempoEspera += 100;
   Serial.println(tempoEspera);
+  tempoEspera += 100;
   if (tempoEspera == 2000){
     tempoEspera = 100;
   }
