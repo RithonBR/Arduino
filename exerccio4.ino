@@ -30,6 +30,9 @@ int ledVerd1 = 42;
 int ledVerd2 = 48;
 int ledVerd3 = 52;
 
+int contador = 0;
+
+int tempoPiscada = 1000;
 
 void setup() {
   // put your setup code here, to run once:
@@ -43,6 +46,8 @@ void setup() {
   pinMode(ledVerd1, OUTPUT);
   pinMode(ledVerd2, OUTPUT);
   pinMode(ledVerd3, OUTPUT);
+
+  Serial.begin(9600);
   
 }
 
@@ -51,25 +56,29 @@ void loop() {
   digitalWrite(ledVer1, HIGH);
   digitalWrite(ledVer2, HIGH);
   digitalWrite(ledVer3, HIGH);
-  delay(1000);
+  delay(tempoPiscada);
   digitalWrite(ledVer1, LOW);
   digitalWrite(ledVer2, LOW);
   digitalWrite(ledVer3, LOW);
-  delay(1000);
+  delay(tempoPiscada);
   
   digitalWrite(ledAmarelo1, HIGH);
   digitalWrite(ledAmarelo2, HIGH);
   delay(1000);
   digitalWrite(ledAmarelo1, LOW);
   digitalWrite(ledAmarelo2, LOW);
-  delay(1000);
+  delay(tempoPiscada);
 
   digitalWrite(ledVerd1, HIGH);
   digitalWrite(ledVerd2, HIGH);
   digitalWrite(ledVerd3, HIGH);
-  delay(1000);
+  delay(tempoPiscada);
   digitalWrite(ledVerd1, LOW);
   digitalWrite(ledVerd2, LOW);
   digitalWrite(ledVerd3, LOW);
-  delay(1000);
+  delay(tempoPiscada);
+
+  contador += 1;
+  Serial.println(contador);
+  
 }
