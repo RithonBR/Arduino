@@ -52,20 +52,89 @@ void setup()
   pinMode(ledVermelho, OUTPUT);
   pinMode(ledAzul, OUTPUT);
   pinMode(ledVerde, OUTPUT);
-
+  Serial.begin(9600);
 }
 
 void loop() {
   digitalWrite(ledVermelho,HIGH);
   delay(tempoEspera);
   digitalWrite(ledVermelho,LOW);
-  
+  Serial.println("Vermelho");
+
+  digitalWrite(ledVermelho,HIGH);
+  delay(tempoEspera);
+  digitalWrite(ledVermelho,LOW);
+  Serial.println("Vermelho");
+
   digitalWrite(ledAzul,HIGH);
   delay(tempoEspera);
   digitalWrite(ledAzul,LOW);
-  
+  Serial.println("Azul");
+
+  digitalWrite(ledVermelho,HIGH);
+  delay(tempoEspera);
+  digitalWrite(ledVermelho,LOW);
+  Serial.println("Vermelho");
+
   digitalWrite(ledVerde,HIGH);
   delay(tempoEspera);
   digitalWrite(ledVerde,LOW);
-  
+  Serial.println("Verde");
+
+  digitalWrite(ledVermelho,HIGH);
+  delay(tempoEspera);
+  digitalWrite(ledVermelho,LOW);
+  Serial.println("Vermelho");
+
+  digitalWrite(ledVermelho,HIGH);
+  digitalWrite(ledAzul,HIGH);
+  digitalWrite(ledVerde,HIGH);
+  delay(tempoEspera);
+  digitalWrite(ledVermelho,LOW);
+  digitalWrite(ledAzul,LOW);
+  digitalWrite(ledVerde,LOW);
+  Serial.println("BRANCO");
+
+  digitalWrite(ledVermelho,HIGH);
+  delay(tempoEspera);
+  digitalWrite(ledVermelho,LOW);
+  Serial.println("Vermelho");
+
+  digitalWrite(ledVermelho,HIGH);
+  digitalWrite(ledAzul,HIGH);
+  delay(tempoEspera);
+  digitalWrite(ledVermelho,LOW);
+  digitalWrite(ledAzul,LOW);
+  Serial.println("MAGENTA");
+
+  digitalWrite(ledVermelho,HIGH);
+  delay(tempoEspera);
+  digitalWrite(ledVermelho,LOW);
+  Serial.println("Vermelho");
+
+  digitalWrite(ledVermelho,HIGH);
+  digitalWrite(ledVerde,HIGH);
+  delay(tempoEspera);
+  digitalWrite(ledVermelho,LOW);
+  digitalWrite(ledVerde,LOW);
+  Serial.println("AMARELO");
+
+  digitalWrite(ledVermelho,HIGH);
+  delay(tempoEspera);
+  digitalWrite(ledVermelho,LOW);
+  Serial.println("Vermelho");
+
+  digitalWrite(ledAzul,HIGH);
+  digitalWrite(ledVerde,HIGH);
+  delay(tempoEspera);
+  digitalWrite(ledAzul,LOW);
+  digitalWrite(ledVerde,LOW);
+  Serial.println("CIANO");
+
+  digitalWrite(ledVermelho,HIGH);
+  delay(tempoEspera);
+  digitalWrite(ledVermelho,LOW);
+  Serial.println("Vermelho");
+
+
 }
